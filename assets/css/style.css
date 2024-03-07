@@ -14,12 +14,15 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /* position: relative; */
 }
 
 .container{
   width: 450px;
-  height: 400px;
+  /* height: 400px; */
   /* background-color: lightgreen; */
   /* position: absolute;
   top: 50%;
@@ -72,4 +75,82 @@ html, body{
   cursor: pointer;
   box-sizing: border-box;
   margin-top: 18px;
+}
+
+#about{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.about-title{
+  color: #355C80;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper-card{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 287px;
+  height: 180px;
+  border-radius: 8px;
+  background-color: #EEF6F8;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; 
+}
+
+.card h4{
+  font-size: 21px;
+  color: #0A0A0A;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.card p{
+  font-size: 13px;
+  font-weight: 400;
+  color: #0A0A0A;
+  line-height: 20px;
+}
+.footer{
+  border-top: 2px solid #355C80;
+}
+
+.footer p{
+  text-align: center;
+  font-family: "Inter", sans-serif; 
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* table */
+@media screen and (max-width: 830px){
+  .wrapper-card{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+}
+
+/* mobile */
+@media screen and (max-width: 576px){
+  .container{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    
+  }
+  .wrapper-card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    width: 340px;
+  }
 }
